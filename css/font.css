@@ -27,13 +27,22 @@
 .sec2 p{
     color: #5d5457;
 }
-.sec2 span{
+.sec2 span.color{
     color: #bf31ff;
 }
 
 @media(min-width : 993px){
-    .sec2 p, .sec2 span{
+    .middle_Box_p, .sec2 .color{
         font-size: 1.2rem !important;
 
     }
+}
+
+.stageText_p{
+    font-size: 1.2rem;
+}
+
+.boxOne_text>span{
+    font-family: 'GmarketSansLight';
+    font-size: 4rem;
 }
