@@ -46,3 +46,10 @@
     font-family: 'GmarketSansLight';
     font-size: 4rem;
 }
+
+@media(max-width : 767px){
+    .boxOne_text>span{
+        font-size: 1.8rem
+
+    }
+}

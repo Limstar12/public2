@@ -25,7 +25,7 @@ p{
 
 .sec3{
     background: #ddffc2;
-    height: 947px;
+    margin-top: -5%;
 }
 
 
@@ -139,6 +139,7 @@ p{
     left: -6%;
     top: 0;
     margin-top: -8%;
+    z-index: 1;
 }
 
 .alarmStage{
@@ -151,7 +152,7 @@ p{
 
 
 .stageText{
-    padding: 10% 8% 5% 49%;
+    padding: 19% 8% 5% 49%;
 }
 
 @media(max-width:1024px){
@@ -163,14 +164,31 @@ p{
 
 
 
-// @media(max-width: 574px){
-//     .stageText{
-//         padding: 0;
-//     }
-//     .alarmStage .stageText .stageText_p{
-//         padding: 11% 0 0 42%;
-//     }
-// }
+@media (min-width: 1025px)and(max-width: 1119px){
+    .stageBox{
+        transform: translateY(-25%);
+    }
+}
+
+@media (min-width: 820px)and(max-width: 1024px){
+    .stageBox{
+        transform: unset;
+    }
+    .stageBox .boxOne{
+        max-width: 120px;
+        max-height: 120px;
+    }
+}
+
+@media (min-width: 768px)and(max-width: 819px){
+    .stageBox{
+        transform: translateY(-25%);
+    }
+    .stageBox .boxOne{
+        max-width: 120px;
+        max-height: 120px;
+    }
+}
 
 
 
@@ -192,7 +210,7 @@ p{
 }
 .oneImg1{
     background-image: url('/boot3/public2/image/middle/login.png');
-
+    
 }
 .oneImg2{
     background-image: url('/boot3/public2/image/middle/allarm.png');
@@ -225,6 +243,10 @@ p{
     color: #009efe;
 }
 
+.boxOne_text{
+    padding: 0 2%;
+}
+
 @media(max-width:767px){
     .alarmStage{
         position: static;
@@ -235,5 +257,95 @@ p{
     }
     .oneText>b>p{
         font-size: 0.8rem;
+        padding: 20% 0;
+    }
+}
+
+////////// section3 //////////
+
+.SW{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    .swiper-slide{
+        .sec3_Box{
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #00db92;
+                transform: translate(5%, 5%);
+                border: 2px solid black;
+                border-radius: 30px;
+            }
+            .white_box{
+                background-color: white;
+                border: 2px solid black;
+                border-radius: 30px;
+                .whiteImg{
+                    background-repeat: no-repeat;
+                    background-size: auto 100%;
+                    width: 100%;
+                    height: 0;                
+                    left: 0;
+                    top: 0;
+                    padding-bottom: 100%;
+                }
+                p{
+                    font-family: 'GmarketSansBold';
+                    color: #828282;
+                    text-align: center;
+                    }
+                }
+            }
+        .step{
+            background-image: url('/boot3/public2/image/end/step_buble.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 30%;
+            height: 0;
+            padding-bottom: calc(147 / 144 * 100%);
+            left: 0;
+            top: 0;
+            transform: translate(-46%, -13%);
+            z-index: 1;
+            p{
+
+            }
+        }
+    }
+}
+
+#whiteImg1,#whiteImg4,#whiteImg7{
+    background-image: url('/boot3/public2/image/end/push_on.png');
+}
+#whiteImg2,#whiteImg5,#whiteImg8{
+    background-image: url('/boot3/public2/image/end/sale_alim.png');
+}
+#whiteImg3,#whiteImg6,#whiteImg9{
+    background-image: url('/boot3/public2/image/end/coupon.png');
+}
+
+#sec3_Box1,#sec3_Box4,#sec3_Box7{
+    .white_box{
+        p{
+            padding: 0 27% 10%;
+        }
+    }
+}
+#sec3_Box2,#sec3_Box5,#sec3_Box8{
+    .white_box{
+        p{
+            padding: 0 24% 10%;
+        }
+    }
+}
+#sec3_Box3,#sec3_Box6,#sec3_Box9{
+    .white_box{
+        p{
+            padding: 0 0 10%;
+        }
     }
 }
