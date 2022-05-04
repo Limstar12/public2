@@ -16,15 +16,16 @@ window.onload=function(){
           prevEl: ".swiper-button-prev",
         },
         slidesPerView: 1,
-        spaceBetween: 10,        
+        spaceBetween: 65,
+        loop : true,        
         breakpoints: {
-          768: {
+          640: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 65,
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 60,
+            spaceBetween: 65,
           },
         },
       });

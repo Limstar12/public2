@@ -10,6 +10,9 @@ p{
 }
 
 ////////// 백그라운드 //////////
+.wrap{
+    overflow: hidden;
+}
 .section{
     background-repeat: repeat-x;
     position: relative;
@@ -25,9 +28,14 @@ p{
 
 .sec3{
     background: #ddffc2;
-    margin-top: -5%;
+    margin-top: -3%;
 }
 
+@media(min-width : 768px) and (max-width : 1440px){
+    .sec3{
+        margin-top: -6%;
+    }
+}
 
 ////////// top //////////
 .total_top .topImg{
@@ -41,15 +49,15 @@ p{
     background: url('/boot3/public2/image/top/airplane.png');
     padding-bottom: 15%;
     right: 0;
-    top: 0;
-    transform: translate(20%, 60%);
+    top: 14%;
+    // transform: translate(20%, 60%);
 }
 .topImg_tree{
     background: url('/boot3/public2/image/top/tree.png');
-    left: 0;
-    top: 0;
+    left: 5%;
+    top: 10%;
     padding-bottom: 25%;
-    transform: translate(10%, 42%);
+    // transform: translate(10%, 42%);
 }
 
 .topImg_hands{
@@ -75,6 +83,11 @@ p{
 }
 
 ////////// 중간 //////////
+
+.sec2 .middlebox{
+    padding-top: 25%;
+}
+
 .wav{
     background: url('/boot3/public2/image/middle/bg_wave_05.png') repeat-x;
     background-size: auto 100%;
@@ -190,6 +203,13 @@ p{
     }
 }
 
+@media (min-width: 425px)and(max-width: 767px){
+    .One{
+        max-width: 120px;
+        max-height: 120px;
+    }
+}
+
 
 
 .One{
@@ -197,6 +217,8 @@ p{
     border-radius: 50%;
     height: 100%;
     width: 100%;
+    min-width: 85px;
+    min-height: 85px;
 }
 
 .oneImg{
@@ -264,8 +286,8 @@ p{
 ////////// section3 //////////
 
 .SW{
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 25%;
+    padding-bottom: 25%;
     .swiper-slide{
         .sec3_Box{
             &::before{
@@ -287,11 +309,19 @@ p{
                 .whiteImg{
                     background-repeat: no-repeat;
                     background-size: auto 100%;
+                    background-position: center;
                     width: 100%;
                     height: 0;                
                     left: 0;
                     top: 0;
                     padding-bottom: 100%;
+                    
+                }
+                h3{
+                    font-family: 'GmarketSansBold';
+                    color: #df3838;
+                    text-align: center;
+                    text-transform: uppercase;
                 }
                 p{
                     font-family: 'GmarketSansBold';
@@ -300,21 +330,21 @@ p{
                     }
                 }
             }
-        .step{
-            background-image: url('/boot3/public2/image/end/step_buble.png');
-            background-repeat: no-repeat;
-            background-size: 100%;
-            width: 30%;
-            height: 0;
-            padding-bottom: calc(147 / 144 * 100%);
-            left: 0;
-            top: 0;
-            transform: translate(-46%, -13%);
-            z-index: 1;
-            p{
+        // .step{
+        //     background-image: url('/boot3/public2/image/end/step_buble.png');
+        //     background-repeat: no-repeat;
+        //     background-size: 100%;
+        //     width: 30%;
+        //     height: 0;
+        //     padding-bottom: calc(147 / 144 * 100%);
+        //     left: 0;
+        //     top: 0;
+        //     transform: translate(-46%, -13%);
+        //     z-index: 1;
+        //     p{
 
-            }
-        }
+        //     }
+        // }
     }
 }
 
@@ -331,21 +361,21 @@ p{
 #sec3_Box1,#sec3_Box4,#sec3_Box7{
     .white_box{
         p{
-            padding: 0 27% 10%;
+
         }
     }
 }
 #sec3_Box2,#sec3_Box5,#sec3_Box8{
     .white_box{
         p{
-            padding: 0 24% 10%;
+
         }
     }
 }
 #sec3_Box3,#sec3_Box6,#sec3_Box9{
     .white_box{
         p{
-            padding: 0 0 10%;
+
         }
     }
 }
